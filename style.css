@@ -1,0 +1,79 @@
+body {
+    background-image: url(image2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 5em;
+    text-align: center;
+}
+
+.startBox h2 {
+    color: white;
+    text-align: center;
+}
+
+.startBox img {
+    height: 200px;
+    margin-top: -18px;
+    width: 200px;
+}
+
+.startBox p {
+    color: white;
+}
+
+.startBox button {
+    background-color: #5BBCBB;
+    color: black;
+    font-size: 20px;
+    width: 200px;
+    height: 60px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.startBox button:focus {
+    outline: none;
+
+}
+
+.startBox button img {
+    height: 35px;
+    width: 35px;
+    margin-top: 2px;
+}
+
+.startBox button span {
+    color: white;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.question1 h4 {
+    color: white;
+}
+.question1 img {
+    height: 50px;
+    margin: 10px;
+}
+#tensDiv {
+    background-color: #A71720;
+    height: 200px;
+    width: 150px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+#onesDiv {
+    background-color: #237BA8;
+    height: 200px;
+    width: 150px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.numbers img {
+    height: 50px;
+    margin: 10px 10px 0 10px;
+    
+}
