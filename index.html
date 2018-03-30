@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="style.css">
 
@@ -24,27 +24,27 @@
 <body>
     <div class="container startBox">
         <div class="row">
-            <div class="col-6">
+            <div class="col-6" id="startLeft">
                 <h2>'Count'aur <br> us <br>Galaxy</h2>
                 <img src="image5.png" alt="">
             </div>
-            <div class="col-6">
+            <div class="col-6" id="startRight">
                 <p>Counting 'Ones' and 'Tens' on <br> the Countarus Galaxy</p>
-                <button>Start <span><img src="image3.png" alt="">x5</span></button>
+                <button id="startGame">Start <span><img src="image3.png" alt="">x5</span></button>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid question1">
         <div class="container">
-            <div class="row question1">
-                <div class="col-6">
+            <div class="row ">
+                <div class="col-6" id="tens1">
                     <h4>Tens</h4>
                     <img src="image7.tif" alt="" style="float: left;height: 180px;">
                     <div id="tensDiv" ondrop="drop(event)" ondragover="allowDrop(event)">
 
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6" id="ones1">
                     <h4>Ones</h4>
                     <img src="image8.tif" alt="" style="float: right;height: 50px;">
                     <div id="onesDiv" ondrop="drop(event)" ondragover="allowDrop(event)">
@@ -71,27 +71,11 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script>
-        function allowDrop(ev) {
-            ev.preventDefault();
-        }
 
-        function drag(ev) {
-            console.log(12);
-            ev.dataTransfer.setData("text", ev.target.id);
-        }
-
-        function drop(ev) {
-            ev.preventDefault();
-            var data = ev.dataTransfer.getData("text");
-            ev.target.appendChild(document.getElementById(data));
-        }
-
-    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="app.js"></script>
 
 </body>
 

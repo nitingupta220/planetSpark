@@ -7,6 +7,10 @@ body {
     text-align: center;
 }
 
+img {
+    cursor: pointer;
+}
+
 .startBox h2 {
     color: white;
     text-align: center;
@@ -48,14 +52,18 @@ body {
     font-size: 20px;
     padding-left: 15px;
 }
-
+.question1 {
+    display: none;
+}
 .question1 h4 {
     color: white;
 }
+
 .question1 img {
     height: 50px;
     margin: 10px;
 }
+
 #tensDiv {
     background-color: #A71720;
     height: 200px;
@@ -75,5 +83,5 @@ body {
 .numbers img {
     height: 50px;
     margin: 10px 10px 0 10px;
-    
+
 }
