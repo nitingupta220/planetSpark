@@ -121,8 +121,6 @@ function drop(ev) {
             $('#onesDiv').empty();
             $('.numbers').replaceWith(originalState.clone());
             $('#correct1').hide();
-
-
         }, 3000)
     } else {
         $('#incorrect1').show();
