@@ -10,7 +10,11 @@ body {
 img {
     cursor: pointer;
 }
-
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
 .startBox h2 {
     color: white;
     text-align: center;

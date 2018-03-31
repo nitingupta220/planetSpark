@@ -7,6 +7,7 @@ function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
 }
 var originalState = $(".numbers").clone();
+var count = 0;
 
 function drop(ev) {
     ev.preventDefault();
@@ -43,6 +44,41 @@ function drop(ev) {
         //do something
         $('#correct1').show();
         $('#incorrect1').hide();
+        count++;
+        console.log(count);
+        document.getElementById('count').innerHTML = count;
+        setTimeout(function () {
+            $('#tensDiv').empty();
+            $('#onesDiv').empty();
+            $('.numbers').replaceWith(originalState.clone());
+            $('#correct1').hide();
+        }, 3000)
+    } else if ($('#tensDiv').find('#drag4').length == 1 && $('#onesDiv').find('#drag2').length == 1) {
+        //do something
+        $('#correct1').show();
+        $('#incorrect1').hide();
+        count++;
+        console.log(count);
+        document.getElementById('count').innerHTML = count;
+        setTimeout(function () {
+            $('#tensDiv').empty();
+            $('#onesDiv').empty();
+            $('.numbers').replaceWith(originalState.clone());
+            $('#correct1').hide();
+        }, 3000)
+    } else if ($('#tensDiv').find('#drag8').length == 1 && $('#onesDiv').find('#drag5').length == 1) {
+        //do something
+        $('#correct1').show();
+        $('#incorrect1').hide();
+        count++;
+        console.log(count);
+        document.getElementById('count').innerHTML = count;
+        setTimeout(function () {
+            $('#tensDiv').empty();
+            $('#onesDiv').empty();
+            $('.numbers').replaceWith(originalState.clone());
+            $('#correct1').hide();
+        }, 3000)
     } else {
         $('#incorrect1').show();
         setTimeout(function () {
