@@ -52,7 +52,12 @@ function drop(ev) {
             $('#onesDiv').empty();
             $('.numbers').replaceWith(originalState.clone());
             $('#correct1').hide();
+            $('#left-5').hide();
+            $('#right-3').hide();
+            $('#left-4').show();
+            $('#right-2').show();
         }, 3000)
+
     } else if ($('#tensDiv').find('#drag4').length == 1 && $('#onesDiv').find('#drag2').length == 1) {
         //do something
         $('#correct1').show();
@@ -65,8 +70,12 @@ function drop(ev) {
             $('#onesDiv').empty();
             $('.numbers').replaceWith(originalState.clone());
             $('#correct1').hide();
+            $('#left-4').hide();
+            $('#right-2').hide();
+            $('#left-1').show();
+            $('#right-8').show();
         }, 3000)
-    } else if ($('#tensDiv').find('#drag8').length == 1 && $('#onesDiv').find('#drag5').length == 1) {
+    } else if ($('#tensDiv').find('#drag1').length == 1 && $('#onesDiv').find('#drag8').length == 1) {
         //do something
         $('#correct1').show();
         $('#incorrect1').hide();
@@ -78,6 +87,42 @@ function drop(ev) {
             $('#onesDiv').empty();
             $('.numbers').replaceWith(originalState.clone());
             $('#correct1').hide();
+            $('#left-1').hide();
+            $('#right-8').hide();
+            $('#left-6').show();
+            $('#right-5').show();
+        }, 3000)
+    } else if ($('#tensDiv').find('#drag6').length == 1 && $('#onesDiv').find('#drag5').length == 1) {
+        //do something
+        $('#correct1').show();
+        $('#incorrect1').hide();
+        count++;
+        console.log(count);
+        document.getElementById('count').innerHTML = count;
+        setTimeout(function () {
+            $('#tensDiv').empty();
+            $('#onesDiv').empty();
+            $('.numbers').replaceWith(originalState.clone());
+            $('#correct1').hide();
+            $('#left-6').hide();
+            $('#right-5').hide();
+            $('#left-2').show();
+            $('#right-9').show();
+        }, 3000)
+    } else if ($('#tensDiv').find('#drag2').length == 1 && $('#onesDiv').find('#drag9').length == 1) {
+        //do something
+        $('#correct1').show();
+        $('#incorrect1').hide();
+        count++;
+        console.log(count);
+        document.getElementById('count').innerHTML = count;
+        setTimeout(function () {
+            $('#tensDiv').empty();
+            $('#onesDiv').empty();
+            $('.numbers').replaceWith(originalState.clone());
+            $('#correct1').hide();
+
+
         }, 3000)
     } else {
         $('#incorrect1').show();

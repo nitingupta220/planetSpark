@@ -39,18 +39,26 @@
         </div>
     </div>
     <div class="container-fluid question1">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row ">
                 <div class="col-6" id="tens1">
                     <h4>Tens</h4>
-                    <img src="image7.tif" alt="" style="float: left;height: 180px;">
+                    <img src="left-5.png" alt="" style="display: block;" id="left-5">
+                    <img src="left-4.png" alt="" id="left-4" class="animated bounceInLeft">
+                    <img src="left-1.png" alt="" id="left-1" class="animated bounceInLeft">
+                    <img src="left-6.png" alt="" id="left-6" class="animated bounceInLeft">
+                    <img src="left-2.png" alt="" id="left-2" class="animated bounceInLeft">
                     <div id="tensDiv" ondrop="drop(event)" ondragover="allowDrop(event)">
 
                     </div>
                 </div>
                 <div class="col-6" id="ones1">
                     <h4>Ones</h4>
-                    <img src="image8.tif" alt="" style="float: right;height: 50px;">
+                    <img src="right-3.png" alt="" style="display: block;" id="right-3">
+                    <img src="right-2.png" alt="" id="right-2" class="animated bounceInRight">
+                    <img src="right-8.png" alt="" id="right-8" class="animated bounceInRight">
+                    <img src="right-5.png" alt="" id="right-5" class="animated bounceInRight">
+                    <img src="right-9.png" alt="" id="right-9" class="animated bounceInRight">
                     <div id="onesDiv" ondrop="drop(event)" ondragover="allowDrop(event)">
 
                     </div>
@@ -58,20 +66,20 @@
             </div>
         </div>
         <div class="container message" id="message1">
-            <h3 id="correct1">Correct!</h3>
+            <h3 id="correct1">Correct, Let's Play Again!</h3>
             <h3 id="incorrect1">Try Again</h3>
         </div>
         <div class="container numbers d-flex justify-content-center" ondrop="drop(event)" ondragover="allowDrop(event)">
             <div class="row">
-                <div><img src="one.svg" alt="" draggable="true" id="drag1" ondragstart="drag(event)"></div>
-                <div><img src="two.svg" alt="" draggable="true" ondragstart="drag(event)" id="drag2"></div>
-                <div><img src="three.svg" alt="" draggable="true" ondragstart="drag(event)" id="drag3"></div>
-                <div><img src="four.svg" alt="" draggable="true" ondragstart="drag(event)" id="drag4"></div>
-                <div><img src="five.svg" alt="" draggable="true" ondragstart="drag(event)" id="drag5"></div>
-                <div><img src="six.svg" alt="" draggable="true" ondragstart="drag(event)" id="drag6"></div>
-                <div><img src="seven.svg" alt="" draggable="true" ondragstart="drag(event)" id="drag7"></div>
-                <div><img src="eight.svg" alt="" draggable="true" ondragstart="drag(event)" id="drag8"></div>
-                <div><img src="nine.svg" alt="" draggable="true" ondragstart="drag(event)" id="drag9"></div>
+                <div><img src="one.svg" alt="" draggable="true" id="drag1" ondragstart="drag(event)" class="drag"></div>
+                <div><img src="two.svg" alt="" draggable="true" ondragstart="drag(event)" id="drag2" class="drag"></div>
+                <div><img src="three.svg" alt="" draggable="true" ondragstart="drag(event)" id="drag3" class="drag"></div>
+                <div><img src="four.svg" alt="" draggable="true" ondragstart="drag(event)" id="drag4" class="drag"></div>
+                <div><img src="five.svg" alt="" draggable="true" ondragstart="drag(event)" id="drag5" class="drag"></div>
+                <div><img src="six.svg" alt="" draggable="true" ondragstart="drag(event)" id="drag6" class="drag"></div>
+                <div><img src="seven.svg" alt="" draggable="true" ondragstart="drag(event)" id="drag7" class="drag"></div>
+                <div><img src="eight.svg" alt="" draggable="true" ondragstart="drag(event)" id="drag8" class="drag"></div>
+                <div><img src="nine.svg" alt="" draggable="true" ondragstart="drag(event)" id="drag9" class="drag"></div>
             </div>
         </div>
     </div>

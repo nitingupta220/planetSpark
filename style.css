@@ -10,11 +10,13 @@ body {
 img {
     cursor: pointer;
 }
+
 .navbar-brand {
     color: white;
     text-decoration: none;
     font-size: 20px;
 }
+
 .startBox h2 {
     color: white;
     text-align: center;
@@ -56,9 +58,33 @@ img {
     font-size: 20px;
     padding-left: 15px;
 }
+
+#tens1 img {
+    float: left;
+    height: 180px;
+    display: none;
+}
+#ones1 #right-8, #right-5, #right-9 {
+    height: 140px !important;
+}
+#tens1 .drag {
+    display: block !important;
+    height: 50px;
+    text-align: center;
+}
+#ones1 .drag {
+    display: block !important;
+    height: 50px;
+    text-align: center;
+}
+#ones1 img {
+    float: right;
+    display: none;
+}
 .question1 {
     display: none;
 }
+
 .question1 h4 {
     color: white;
 }
@@ -89,6 +115,7 @@ img {
     margin: 10px 10px 0 10px;
 
 }
+
 .message h3 {
     color: white;
     display: none;
