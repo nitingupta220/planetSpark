@@ -1,16 +1,57 @@
 function allowDrop(ev) {
+
     ev.preventDefault();
 }
 
 function drag(ev) {
-    console.log(12);
     ev.dataTransfer.setData("text", ev.target.id);
 }
+var originalState = $(".numbers").clone();
 
 function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
+
+
+
+    var left = false;
+    var right = false;
+    var drag = '#drag';
+
+    for (var i = 1; i < 10; i++) {
+
+        var j = i;
+        temp = drag + j.toString();
+        if ($('#tensDiv').find(temp).length == 1) {
+            left = true;
+        }
+        if ($('#onesDiv').find(temp).length == 1) {
+            right = true;
+        }
+    }
+
+
+    if (left == false || right == false) {
+        return;
+    }
+
+
+
+
+    if ($('#tensDiv').find('#drag5').length == 1 && $('#onesDiv').find('#drag3').length == 1) {
+        //do something
+        $('#correct1').show();
+        $('#incorrect1').hide();
+    } else {
+        $('#incorrect1').show();
+        setTimeout(function () {
+            $('#tensDiv').empty();
+            $('#onesDiv').empty();
+            $('.numbers').replaceWith(originalState.clone());
+        }, 2000)
+
+    }
 }
 $(document).ready(function () {
     $('#startLeft').addClass('animated bounceInLeft');
@@ -22,7 +63,6 @@ $(document).ready(function () {
         $('#tens1').addClass('animated bounceInLeft');
         $('#ones1').addClass('animated bounceInRight');
         $('.numbers').addClass('animated bounceInUp');
-
     })
 
-})
+});

@@ -85,3 +85,7 @@ img {
     margin: 10px 10px 0 10px;
 
 }
+.message h3 {
+    color: white;
+    display: none;
+}
