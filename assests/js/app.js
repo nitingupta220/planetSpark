@@ -117,10 +117,8 @@ function drop(ev) {
         console.log(count);
         document.getElementById('count').innerHTML = count;
         setTimeout(function () {
-            $('#tensDiv').empty();
-            $('#onesDiv').empty();
-            $('.numbers').replaceWith(originalState.clone());
-            $('#correct1').hide();
+            $('.question1').hide(2000);
+            $('#end').show();
         }, 3000)
     } else {
         $('#incorrect1').show();
